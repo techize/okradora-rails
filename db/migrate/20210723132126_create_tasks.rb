@@ -2,7 +2,7 @@ class CreateTasks < ActiveRecord::Migration[6.1]
   def change
     create_table :tasks do |t|
       t.string :title
-      t.references :owner, null: false, foreign_key: { to_table: user }
+      t.references :owner, null: false, foreign_key: { to_table: users }
       t.integer :priority
       t.integer :status
       t.text :notes
@@ -14,7 +14,7 @@ class CreateTasks < ActiveRecord::Migration[6.1]
       t.timestamp :end_date
       t.integer :parent_task
       t.text :labels
-      t.references :tenant, null: false, foreign_key: { to_table: tenant }
+      t.references :tenant, null: false, foreign_key: { to_table: tenants }
       t.references :project, null: false, foreign_key: { to_table: project }
 
       t.timestamps

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  group: one
+  tenant: one
+  owner: one
+  name: MyString
+  notes: MyText
+  colour: MyString
+
+two:
+  group: two
+  tenant: two
+  owner: two
+  name: MyString
+  notes: MyText
+  colour: MyString

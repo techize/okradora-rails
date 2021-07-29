@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_group: one
+  tenant: one
+  user: one
+  name: MyString
+  notes: MyText
+
+two:
+  parent_group: two
+  tenant: two
+  user: two
+  name: MyString
+  notes: MyText
