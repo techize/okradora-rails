@@ -7,7 +7,7 @@ class CreateTasks < ActiveRecord::Migration[6.1]
       t.integer :status
       t.text :notes
       t.integer :visibility
-      t.references :group, null: false, foreign_key: true
+      t.references :group, null: false, foreign_key: {to_table: groups }
       t.timestamp :received_date
       t.timestamp :start_date
       t.timestamp :due_date

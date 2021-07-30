@@ -4,7 +4,7 @@ class CreateProjects < ActiveRecord::Migration[6.1]
       t.string :name
       t.text :notes
       t.blob :details
-      t.references :owner, null: false, foreign_key: true
+      t.references :owner, null: false, foreign_key: {to_table: user }
       t.text :editors
       t.text :viewers
 

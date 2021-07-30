@@ -9,7 +9,7 @@ class CreateLocations < ActiveRecord::Migration[6.1]
       t.string :county
       t.string :country
       t.string :postcode
-      t.references :tenant, null: false, foreign_key: true
+      t.references :tenant, null: false, foreign_key: { to_table: tenants }
 
       t.timestamps
     end
