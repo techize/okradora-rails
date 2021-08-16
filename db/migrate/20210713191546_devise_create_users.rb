@@ -33,8 +33,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
       t.datetime :locked_at
 
       
-      t.references :tenant, null: false, foreign_key: { to_table: tenants }
-      t.references :location, null: true, foreign_key: {to_table: location}
+   
 
       t.timestamps null: false
     end
